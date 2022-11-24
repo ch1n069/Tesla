@@ -1,5 +1,6 @@
 import React from "react";
 import "./Section.css";
+import down__arrow from "../images/down-arrow.svg";
 
 const Section = () => {
   return (
@@ -9,7 +10,12 @@ const Section = () => {
         <p>Order online for touchless delivery</p>
         <div className="section__footer">
           <button className="right__button">Order online</button>
-          <button>Existing inventory</button>
+          <button className="right__button left__button">
+            Existing inventory
+          </button>
+          <div className="down__arrow">
+            <img className="arrow" src={down__arrow} alt="down__arrow" />
+          </div>
         </div>
       </div>
     </div>
