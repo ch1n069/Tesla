@@ -1,13 +1,15 @@
 .section__container {
     background-color: red;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     height: 100vh;
     width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../../public/images/model-s.jpg);
+    background-image: url(../images/model-s.jpg);
 }
 
 .section__header {
@@ -16,7 +18,7 @@
 }
 
 .section__footer {
-    display: flex;
+    /* display: flex; */
     margin-top: 370px;
     justify-content: center;
     align-items: center;
@@ -31,4 +33,23 @@
     opacity: 0.85;
     text-transform: uppercase;
     font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.left__button {
+    margin-left: 20px;
+    background-color: white;
+    color: black;
+}
+
+.down__arrow {
+    /* background-color: red; */
+    height: 30px;
+    margin-top: 30px;
+}
+
+.arrow {
+    height: 40px;
+    animation: animateDown infinite 1.5s;
 }
