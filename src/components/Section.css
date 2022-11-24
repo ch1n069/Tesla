@@ -1,0 +1,21 @@
+.section__container {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../../public/images/model-s.jpg);
+}
+
+.section__header {
+    padding-top: 15vh;
+    text-align: center;
+}
+
+.right__button {
+    color: black;
+    background-color: aqua;
+}
