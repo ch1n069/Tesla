@@ -7,12 +7,12 @@ const Section = (props) => {
   return (
     <div
       className="section__container"
-      style={{ background: props.backgroundImage }}
+      style={{ backgroundImage: `url(${props.imageUrl})` }}
     >
       <div className="section__header">
         <h1>{props.title}</h1>
         <p>{props.description}</p>
-        <img src={props.imageUrl} alt="" />
+        {/* <img src={props.imageUrl} alt="" /> */}
         <div className="section__footer ">
           <div className="buttons">
             <button className="button__group">{props.leftButton}</button>
