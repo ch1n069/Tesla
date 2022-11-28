@@ -7,11 +7,22 @@ const tes_data = [
     title: "Model 3",
     subtitle: "Schedule a test drive",
     image: "../images/model-3.jpg",
+    rightButton: "Existing inventory",
+    leftButton: "Custom Order",
   },
   {
     title: "Model Y",
     subtitle: "Schedule a test drive",
     image: "../images/model-y.jpg",
+    rightButton: "Existing inventory",
+    leftButton: "Custom Order",
+  },
+  {
+    title: "Model X",
+    subtitle: "Schedule a test drive",
+    image: "../images/model-x.jpg",
+    rightButton: "Existing inventory",
+    leftButton: "Custom Order",
   },
 ];
 console.log("test", tes_data);
@@ -27,6 +38,8 @@ const Home = () => {
             title={data.title}
             description={data.subtitle}
             imageUrl={data.image}
+            rightButton={data.rightButton}
+            leftButton={data.leftButton}
           />
         );
       })}
