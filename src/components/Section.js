@@ -1,6 +1,6 @@
 import React from "react";
 import "./Section.css";
-// import down__arrow from "/images/down-arrow.png";
+import down__arrow from "../assets/images/down-arrow.svg";
 
 const Section = (props) => {
   console.log(props.title);
@@ -22,11 +22,7 @@ const Section = (props) => {
           </div>
 
           <div className="down__arrow">
-            <img
-              className="arrow"
-              src={props.backgroundImage}
-              alt="down__arrow"
-            />
+            <img className="arrow" src={down__arrow} alt="down__arrow" />
           </div>
         </div>
       </div>
