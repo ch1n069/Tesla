@@ -1,5 +1,5 @@
 .section__container {
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -9,7 +9,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../images/model-s.jpg);
 }
 
 .section__header {
@@ -24,7 +23,9 @@
     align-items: center;
 }
 
-.right__button {
+.buttons {}
+
+.button__group {
     color: rgb(240, 240, 240);
     height: 40px;
     width: 356px;
@@ -35,12 +36,19 @@
     font-size: 12px;
     border: none;
     cursor: pointer;
+    @media (max-width: 760px) {
+        margin: 10;
+    }
 }
 
 .left__button {
     margin-left: 20px;
     background-color: white;
     color: black;
+    opacity: 0.65;
+    @media (max-width: 760px) {
+        padding-top: 10;
+    }
 }
 
 .down__arrow {
@@ -53,3 +61,5 @@
     height: 40px;
     animation: animateDown infinite 1.5s;
 }
+
+.left__button {}

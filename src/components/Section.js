@@ -1,20 +1,32 @@
 import React from "react";
 import "./Section.css";
-import down__arrow from "../images/down-arrow.svg";
+// import down__arrow from "/images/down-arrow.png";
 
-const Section = () => {
+const Section = (props) => {
+  console.log(props.title);
   return (
-    <div className="section__container">
+    <div
+      className="section__container"
+      style={{ background: props.backgroundImage }}
+    >
       <div className="section__header">
-        <h1>Model S</h1>
-        <p>Order online for touchless delivery</p>
-        <div className="section__footer">
-          <button className="right__button">Order online</button>
-          <button className="right__button left__button">
-            Existing inventory
-          </button>
+        <h1>{props.title}</h1>
+        <p>{props.description}</p>
+        <img src={props.imageUrl} alt="" />
+        <div className="section__footer ">
+          <div className="buttons">
+            <button className="button__group">{props.leftButton}</button>
+            <button className=" left__button button__group">
+              {props.rightButton}
+            </button>
+          </div>
+
           <div className="down__arrow">
-            <img className="arrow" src={down__arrow} alt="down__arrow" />
+            <img
+              className="arrow"
+              src={props.backgroundImage}
+              alt="down__arrow"
+            />
           </div>
         </div>
       </div>
