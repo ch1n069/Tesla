@@ -12,6 +12,11 @@ const Header = () => {
         <p>Model X</p>
         <p>Model Y</p>
       </div>
+      <div className="right__menu">
+        <a>Shop</a>
+        <a>Tesla Account</a>
+        <i class="bx bx-menu">b</i>
+      </div>
     </div>
   );
 };
