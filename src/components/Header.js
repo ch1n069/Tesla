@@ -17,6 +17,20 @@ const Header = () => {
         <a>Tesla Account</a>
         <i class="bx bx-menu hamburger"></i>
       </div>
+      <div className="bugger__nav">
+        <div className="burger__li">
+          <div className="close_side_nav">
+            <i class="bx bx-x "></i>
+          </div>
+          <li>Existing inventory</li>
+          <li>Used Inventory</li>
+          <li>Trade In</li>
+          <li>Roadster</li>
+          <li>Charging</li>
+          <li>Existing inventory</li>
+          <li>Existing inventory</li>
+        </div>
+      </div>
     </div>
   );
 };
