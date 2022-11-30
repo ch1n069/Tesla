@@ -27,3 +27,11 @@ a {
     padding: 0 10px;
     flex-wrap: nowrap;
 }
+
+.right__menu a {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0 10px;
+    flex-wrap: nowrap;
+    margin-right: 10px;
+}
