@@ -24,6 +24,28 @@ const tes_data = [
     rightButton: "Existing inventory",
     leftButton: "Custom Order",
   },
+  {
+    title: " Lowest Cost Solar Panels in America",
+    subtitle: "Money-back guarantee",
+    image: "../images/solar-panel.jpg",
+    rightButton: "Order Now ",
+    leftButton: "Learn More",
+  },
+  {
+    title: " Solar for new roofs",
+    subtitle: "Solar Roofs Cost More Than The New Roof Solar Panels ",
+    image: "../images/solar-roof.jpg",
+    rightButton: "Order Now ",
+    leftButton: "Learn More",
+  },
+  {
+    title: " Accessories",
+    subtitle: " ",
+    image: "../images/accessories.jpg",
+    // rightButton: "Order Now ",
+    // leftButton: "Shop Now",
+    shopNow: "Shop Now",
+  },
 ];
 console.log("test", tes_data);
 
