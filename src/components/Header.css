@@ -6,6 +6,7 @@
     padding: 0 20px;
     top: 0;
     left: 0;
+    justify-content: space-between;
     right: 0;
 }
 
@@ -26,12 +27,33 @@ a {
     text-transform: uppercase;
     padding: 0 10px;
     flex-wrap: nowrap;
+    /* display: flex; */
 }
 
 .right__menu a {
     font-weight: 600;
+    /* display: flex; */
     text-transform: uppercase;
     padding: 0 10px;
     flex-wrap: nowrap;
     margin-right: 10px;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hamburger {
+    font-size: 30px;
+    /* padding-top: 10px; */
+    cursor: pointer;
+}
+
+
+/* media query */
+
+@media (max-width: 768px) {
+    .menu p {
+        display: none;
+    }
 }

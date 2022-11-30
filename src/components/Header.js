@@ -15,7 +15,7 @@ const Header = () => {
       <div className="right__menu">
         <a>Shop</a>
         <a>Tesla Account</a>
-        <i class="bx bx-menu">b</i>
+        <i class="bx bx-menu hamburger"></i>
       </div>
     </div>
   );
