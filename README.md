@@ -6,6 +6,8 @@
 
 ![tesla-clone-project-image](https://user-images.githubusercontent.com/82473156/205687552-06c2c85e-67bc-4b36-ada1-382cd2f2f24e.png)
 
+![tesla-clone-project-image](https://user-images.githubusercontent.com/82473156/205688224-b5331fe0-da4a-4305-bd38-26f6542ba5cd.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
