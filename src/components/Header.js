@@ -26,9 +26,10 @@ const Header = () => {
       <div className="right__menu">
         <a>Shop</a>
         <a>Tesla Account</a>
-        <div className="hamburger">
-          <i onClick={openSideMenuHandler} class="bx bx-menu hamburger"></i>
-        </div>
+
+        <i onClick={openSideMenuHandler} class="bx bx-menu hamburger"></i>
+
+        <div className="hamburger"></div>
       </div>
       {burger ? (
         <div className="bugger__nav">
