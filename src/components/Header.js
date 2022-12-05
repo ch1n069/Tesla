@@ -4,9 +4,13 @@ import "./Header.css";
 const Header = () => {
   const [burger, setBurger] = useState(false);
 
-  const closeMenuHandler = () => {
+  const openSideMenuHandler = () => {
     console.log("clicked");
     setBurger(true);
+  };
+  const closeSideMenuHandler = () => {
+    console.log("side menu closed");
+    setBurger(false);
   };
   return (
     <div className="header__container">
@@ -23,23 +27,25 @@ const Header = () => {
         <a>Shop</a>
         <a>Tesla Account</a>
         <div className="hamburger">
-          <i class="bx bx-menu hamburger"></i>
+          <i onClick={openSideMenuHandler} class="bx bx-menu hamburger"></i>
         </div>
       </div>
-      <div className="bugger__nav">
-        <div className="burger__li">
-          <div className="close_side_nav">
-            <i onClick={closeMenuHandler} class="bx bx-x "></i>
+      {burger ? (
+        <div className="bugger__nav">
+          <div className="burger__li">
+            <div className="close_side_nav">
+              <i onClick={closeSideMenuHandler} class="bx bx-x "></i>
+            </div>
+            <li>Existing inventory</li>
+            <li>Used Inventory</li>
+            <li>Trade In</li>
+            <li>Roadster</li>
+            <li>Charging</li>
+            <li>Existing inventory</li>
+            <li>Existing inventory</li>
           </div>
-          <li>Existing inventory</li>
-          <li>Used Inventory</li>
-          <li>Trade In</li>
-          <li>Roadster</li>
-          <li>Charging</li>
-          <li>Existing inventory</li>
-          <li>Existing inventory</li>
         </div>
-      </div>
+      ) : null}
     </div>
   );
 };
