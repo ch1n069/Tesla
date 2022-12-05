@@ -1,3 +1,9 @@
+# Tesla website clone V2
+
+## project screenshot
+
+![tesla-clone-porject-snapshot](https://user-images.githubusercontent.com/82473156/205686067-06901ea4-7462-42ed-8a5c-c2dcc5dff8b0.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
